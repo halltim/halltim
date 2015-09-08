@@ -8,7 +8,6 @@ gem 'rails', '4.2.1'
 
 gem 'rails_12factor'  #for logging with Heroku
 
-#gem 'pg'  #for database with Heroku
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
@@ -52,5 +51,9 @@ group :development, :test do
   gem 'spring'
 
   # gem 'sqlite3'
+end
+
+group :production do
+  gem 'pg'  #for database with Heroku
 end
 
