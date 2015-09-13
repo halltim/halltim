@@ -4,7 +4,7 @@ class ContactMe < ApplicationMailer
     @email = email
     @phone = phone
     @message = message
-    @recipient_email = timhall3000@gmail.com
+    @recipient_email = "timhall3000@gmail.com"
     @subject = "Website Contact Form:  #{@name}"
     mail(to: @recipient_email, subject: @subject)
   end
