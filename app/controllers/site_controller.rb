@@ -15,7 +15,7 @@ class SiteController < ApplicationController
     puts @email
     puts @message
 
-    ContactMe.contact_email(@name, @phone, @email, @message).deliver_now
+    ContactMe.contact_email(@name, @phone, @email, @message).deliver_later
 
     redirect_to root_path
 
