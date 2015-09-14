@@ -4,17 +4,19 @@
     <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
   </head>
   <body>
-    <div class="container">
-      <p>"You have received a new message from your website contact form.<br>Here are the details:</p>
-      <br>
-      <ul>
-        <li>Name: <%= @name %> </li>
-        <li>Email: <%= @email %> </li>
-        <li>Phone: <%= @phone %> </li>
-      </ul>
-      <br>
-      <h3>Message:</h3>
-      <p><%= @message %></p>
-    </div>
+    <!-- <div class="container"> -->
+      <h3>New Contact:</h3>
+
+      <p><strong>Message</strong><br><%= @message %></p>
+    
+
+
+      <p><strong>Name</strong><br><%= @name %></p>
+
+      <p><strong>Email</strong><br><%= @email %></p>
+
+      <p><strong>Phone</strong><br><%= @phone %></p>
+
+    <!-- </div> -->
   </body>
 </html>
