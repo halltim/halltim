@@ -8,6 +8,6 @@ class ContactMe < ApplicationMailer
     @recipient_email = "timhall3000@gmail.com"
     @subject = "Website Contact Form:  #{@name}"
     @sender_email = "contact@halltim.com"
-    mail(to: @recipient_email, subject: @subject)
+    mail(to: @recipient_email, subject: @subject, from: @email)
   end
 end
